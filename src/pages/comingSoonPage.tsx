@@ -8,7 +8,7 @@ export default function ComingSoonPage() {
       <div className="flex w-5/6 items-center gap-64 rounded-2x p-32 phones:w-full phones:flex-col-reverse">
         <div className="flex w-3/5 flex-col gap-64 phones:w-full">
           <p
-            className="text-[8rem] text-white phones:text-center"
+            className="text-[8rem] text-white phones:text-center phones:text-[5rem]"
             style={{ lineHeight: '130%' }}
           >
             Sorry, the page you were looking for was not found
@@ -22,7 +22,7 @@ export default function ComingSoonPage() {
           <div className="flex">
             <Link
               to="/"
-              className="bg-secondary flex items-center gap-12 rounded-2xl px-24 py-12 text-white hover:bg-opacity-80"
+              className="text-primary flex items-center gap-12 rounded-2xl bg-white px-24 py-12 hover:bg-opacity-80"
             >
               <ArrowLeftToLine size={16} />
               <p>Back to Home</p>

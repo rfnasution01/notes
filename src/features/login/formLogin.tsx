@@ -5,14 +5,17 @@ import { Eye, EyeOff, Lock, User2 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export function FormLogin() {
-  const { form } = useLogin()
+export default function FormLogin() {
+  const { form, handleSubmitLogin } = useLogin()
 
   const [isShow, setIsShow] = useState<boolean>(false)
 
   return (
     <Form {...form}>
-      <form className="flex w-3/5 flex-col gap-32 phones:w-4/5">
+      <form
+        className="flex w-3/5 flex-col gap-32 phones:w-4/5"
+        onSubmit={form.handleSubmit(handleSubmitLogin)}
+      >
         <FormInputText
           name="username"
           form={form}
@@ -43,7 +46,7 @@ export function FormLogin() {
           <div className="flex justify-end">
             <Link
               to="forgot-password"
-              className="text-primary underline hover:text-indigo-500"
+              className="text-primary underline hover:text-indigo-500 phones:text-white"
             >
               Forgotten Password?
             </Link>
@@ -51,13 +54,13 @@ export function FormLogin() {
         </div>
         <button
           type="submit"
-          className="bg-primary text-primary rounded-2xl px-24 py-12 hover:bg-opacity-80 phones:bg-white"
+          className="bg-primary phones:text-primary rounded-2xl px-24 py-12 text-white hover:bg-opacity-80 phones:bg-white"
         >
           Submit
         </button>
         <p className="text-center font-nunito">OR</p>
         <Link
-          to="/signup"
+          to="/login/sign-up"
           className="border-primary text-primary hover:bg-primary rounded-2xl border px-24 py-12 text-center hover:text-white phones:border-white phones:text-white"
         >
           Sign Up
