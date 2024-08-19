@@ -12,7 +12,7 @@ export function FormLogin() {
 
   return (
     <Form {...form}>
-      <form className="flex w-3/5 flex-col gap-32">
+      <form className="flex w-3/5 flex-col gap-32 phones:w-4/5">
         <FormInputText
           name="username"
           form={form}
@@ -51,14 +51,14 @@ export function FormLogin() {
         </div>
         <button
           type="submit"
-          className="bg-primary rounded-2xl px-24 py-12 text-white hover:bg-opacity-80"
+          className="bg-primary text-primary rounded-2xl px-24 py-12 hover:bg-opacity-80 phones:bg-white"
         >
           Submit
         </button>
         <p className="text-center font-nunito">OR</p>
         <Link
           to="/signup"
-          className="border-primary text-primary hover:bg-primary rounded-2xl border px-24 py-12 text-center hover:text-white"
+          className="border-primary text-primary hover:bg-primary rounded-2xl border px-24 py-12 text-center hover:text-white phones:border-white phones:text-white"
         >
           Sign Up
         </Link>
