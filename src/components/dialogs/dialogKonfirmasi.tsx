@@ -19,6 +19,8 @@ export function DialogKonfirmasi({
   width,
   isMobile,
   classNameHeader,
+  position = 'middle',
+  className,
 }: {
   isOpen: boolean
   setIsOpen: Dispatch<SetStateAction<boolean>>
@@ -29,15 +31,19 @@ export function DialogKonfirmasi({
   width?: string
   isMobile?: boolean
   classNameHeader?: string
+  position?: 'bottom' | 'left' | 'right' | 'top' | 'middle'
+  className?: string
 }) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent
-        className={`scrollbar overflow-y-autotext-[2rem] flex flex-col border bg-white phones:text-[2.4rem]`}
-        position="middle"
+        className={`scrollbar overflow-y-autotext-[2rem] flex flex-col border bg-white phones:text-[2.4rem] ${className}`}
+        position={position}
         style={{
           width: isAuto ? 'auto' : isMobile ? '90%' : width ? width : '30%',
-          maxHeight: '80vh',
+          height: position === 'left' || position === 'right' ? '100%' : 'auto',
+          maxHeight:
+            position === 'left' || position === 'right' ? '100vh' : '80vh',
         }}
       >
         <div className="scrollbar flex h-full flex-col gap-32 overflow-y-auto p-32">

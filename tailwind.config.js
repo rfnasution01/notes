@@ -99,7 +99,7 @@ export default {
       // ? ----- COLOR SYSTEM
       colors: {
         background: {
-          DEFAULT: '#F0f0f0',
+          DEFAULT: '#FDFBFF',
           secondary: '#f8fafc',
         },
         border: {

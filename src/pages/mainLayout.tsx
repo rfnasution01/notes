@@ -1,9 +1,14 @@
+import { HeaderLv1, HeaderLv2 } from '@/features/mainLayout'
+import { Outlet } from 'react-router-dom'
+
 export default function MainLayout() {
   return (
-    <div className="">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia
-      rerum ex ea ipsa libero unde dolore animi expedita odio, autem perferendis
-      nostrum delectus facere quas hic ullam error suscipit.
+    <div className="scrollbar flex h-screen flex-col overflow-auto text-[2rem] phones:text-[2.4rem]">
+      <HeaderLv1 />
+      <HeaderLv2 />
+      <div className="scrollbar flex flex-1 overflow-y-auto">
+        <Outlet />
+      </div>
     </div>
   )
 }
