@@ -36,9 +36,10 @@ export function useSignUp() {
       ).toString()
       localStorage.setItem('savedUser', encryptedData)
 
-      toast.success('Registrasi akun berhasil!')
+      toast.success('Sign up account is success!')
       setIsShow(false)
       setIsSubmit(false)
+      form.reset()
       setTimeout(() => {
         navigate('/login')
       }, 1000)

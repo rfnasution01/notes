@@ -36,13 +36,14 @@ export function useLogin() {
       const token = nanoid() // Menggunakan nanoid untuk menghasilkan token unik
       Cookies.set('token', token)
       localStorage.setItem('token', token)
+      form.reset()
 
       toast.success('Login berhasil!')
       setTimeout(() => {
         navigate('/')
       }, 1000)
     } else {
-      toast.error('Username atau password salah!')
+      toast.error('Username or password is wrong!')
     }
   }
 

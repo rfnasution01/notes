@@ -45,10 +45,10 @@ export default function FormLogin() {
           />
           <div className="flex justify-end">
             <Link
-              to="forgot-password"
-              className="text-primary underline hover:text-indigo-500 phones:text-white"
+              to="/forgot-password"
+              className="text-primary text-[1.8rem] underline hover:text-indigo-500 phones:text-white"
             >
-              Forgotten Password?
+              Forgot Password?
             </Link>
           </div>
         </div>
