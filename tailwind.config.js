@@ -93,6 +93,7 @@ export default {
         roboto: ['Roboto Slab', 'serif'],
         'sf-pro': ['SF Pro Display', 'sans-serif'],
         helvetica: ['Helvetica', 'sans-serif'],
+        sacramento: ['Sacramento', 'cursive'],
       },
 
       // ? ----- COLOR SYSTEM
@@ -105,70 +106,16 @@ export default {
           DEFAULT: '#8C9196',
           subdued: '#C9CCCF',
         },
-        sunset: {
-          orange: '#fc5c7d',
-          pink: '#fca9c6',
-          purple: '#6a0572',
-        },
-        dawn: {
-          yellow: '#FDE68A',
-          orange: '#FCA5A5',
-          pink: '#FBCFE8',
-        },
-        twilight: {
-          light: '#d3b8e8', // Warna ungu muda lembut
-          medium: '#8e5ea2', // Warna ungu sedang
-          dark: '#4a1a66', // Warna ungu tua
-        },
-        aurora: {
-          green: '#00ff9f', // Hijau neon
-          blue: '#00c3ff', // Biru terang
-          purple: '#a06eff', // Ungu
-          pink: '#ff66c4',
-        },
-        primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
-        },
-        secondary: {
-          50: '#EFF9F8',
-          //* Background
-          100: '#E8F4F3',
-          200: '#E0F3F1',
-          //* Complement
-          300: '#D0EDEB',
-          400: '#A2DBD7',
-          //* Default
-          500: '#40A69F',
-          //* Hovered
-          600: '#3B9993',
-          //* Active
-          700: '#2F7A75',
-          800: '#235C58',
-          900: '#173D3A',
-        },
-        typo: {
-          DEFAULT: '#1F1F1F',
-          secondary: '#707070',
-          tertiary: '#999CA0',
-          icons: '#999CA0',
-          divider: '#EBEBEB',
-          outline: '#D9D9D9',
-        },
-        dark: '#222222',
-        light: '#F5F5F5',
+
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
+        },
+        primary: {
+          DEFAULT: '#301DAD',
+        },
+        secondary: {
+          DEFAULT: '#5A4282',
         },
       },
 
