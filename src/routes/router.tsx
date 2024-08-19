@@ -1,5 +1,6 @@
 import { createBrowserRouter, redirect } from 'react-router-dom'
 import {
+  DashboardLayout,
   ForgotPasswordPage,
   LoginLayout,
   LoginPage,
@@ -22,6 +23,12 @@ export const router = createBrowserRouter([
 
       return null
     },
+    children: [
+      {
+        path: '',
+        element: <DashboardLayout />,
+      },
+    ],
   },
   {
     path: 'login',

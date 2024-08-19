@@ -118,3 +118,43 @@ export const getDayName = (dayIndex) => {
   const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']
   return days[dayIndex]
 }
+
+// Function to get mood emoji based on value
+export const getMoodEmoji = (value: number) => {
+  switch (value) {
+    case 0:
+      return '😡' // Very Bad
+    case 1:
+      return '😠' // Bad
+    case 2:
+      return '😐' // Neutral
+    case 3:
+      return '😊' // Good
+    case 4:
+      return '😁' // Very Good
+    case 5:
+      return '🤩' // Excellent
+    default:
+      return '😊' // Default to Good
+  }
+}
+
+// Function to get mood emoji based on value
+export const getMood = (value: number) => {
+  switch (value) {
+    case 0:
+      return 'Very Bad'
+    case 1:
+      return 'Bad'
+    case 2:
+      return 'Neutral'
+    case 3:
+      return 'Good'
+    case 4:
+      return 'Very Good'
+    case 5:
+      return 'Excellent'
+    default:
+      return 'Good'
+  }
+}
