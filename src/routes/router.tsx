@@ -1,6 +1,7 @@
 import { createBrowserRouter, redirect } from 'react-router-dom'
 import {
   DashboardLayout,
+  DetailPostPages,
   ForgotPasswordPage,
   LoginLayout,
   LoginPage,
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: '',
         element: <DashboardLayout />,
+      },
+      {
+        path: 'detail',
+        element: <DetailPostPages />,
       },
     ],
   },

@@ -110,6 +110,22 @@
     border-radius: 6px;
   }
 
+  .scrollbar-new::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-new::-webkit-scrollbar-thumb {
+    background: #9989b4;
+    border-radius: 4px;
+  }
+
+  .scrollbar-new::-webkit-scrollbar-track {
+    background: #afa8ba;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    background-clip: padding-box;
+  }
+
   .heading__primary {
     @apply font-nunito text-[5.1rem] font-extrabold tracking-6;
   }
